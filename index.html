@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Portafolio personal de Héctor Encarnación. Desarrollo web y diseño digital.">
+
+  <title>Héctor Encarnación | Web Developer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-[#061013] text-[#B8CBCE]">
+
+  <!-- =====================================
+         HEADER / NAVEGACIÓN
+    ====================================== -->
+
+  <header class="bg-[#061013] border-b border-[#26373B]">
+
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-5"
+      aria-label="Navegación principal">
+
+      <!-- Logo -->
+      <a href="#inicio" class="text-2xl font-bold text-white">
+
+        HE. <span class="text-[#40E0D0]">/ PORTAFOLIO</span>
+      </a>
+
+      <!-- Enlaces -->
+      <ul class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+
+        <li>
+          <a href="#inicio" class="text-[#40E0D0] font-medium">
+            Inicio
+          </a>
+        </li>
+
+        <li>
+          <a href="#sobre-mi" class="text-white hover:text-[#40E0D0] transition-colors">
+            Sobre mí
+          </a>
+        </li>
+
+        <li>
+          <a href="#habilidades" class="text-white hover:text-[#40E0D0] transition-colors">
+            Habilidades
+          </a>
+        </li>
+
+        <li>
+          <a href="#proyectos" class="text-white hover:text-[#40E0D0] transition-colors">
+            Proyectos
+          </a>
+        </li>
+
+        <li>
+          <a href="#contacto" class="text-white hover:text-[#40E0D0] transition-colors">
+            Contacto
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- Botón de tema -->
+      <button id="cambiar-tema" type="button"
+        class="border border-[#26373B] text-white px-4 py-2 rounded-full hover:border-[#40E0D0] transition-colors"
+        aria-label="Cambiar modo claro u oscuro" aria-pressed="false">
+        ☀ / ☾
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- =====================================
+         CONTENIDO PRINCIPAL
+    ====================================== -->
+
+  <main>
+
+    <!-- =================================
+             HERO
+        ================================== -->
+
+    <section id="inicio" class="relative min-h-[700px] lg:min-h-[780px] bg-[#061013] flex items-center overflow-hidden">
+
+      <!-- Imagen de fondo -->
+      <img src="img/hero.png" alt="Fotografía profesional de Héctor Encarnación"
+        class="absolute inset-0 w-full h-full object-cover object-[65%_top] lg:object-[center_top]">
+
+      <!-- Degradado -->
+      <div class="absolute inset-0 bg-gradient-to-r from-[#061013]/95 via-[#061013]/45 to-transparent"
+        aria-hidden="true"></div>
+
+      <!-- Contenido del Hero -->
+      <div class="relative z-10 max-w-7xl mx-auto w-full px-6 py-20">
+
+        <div class="max-w-2xl">
+
+          <p class="text-[#40E0D0] text-sm font-semibold tracking-widest uppercase mb-6">
+            Desarrollo Web / Diseño Digital
+          </p>
+
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+
+            Transformando ideas en
+
+            <span class="text-[#40E0D0]">
+              experiencias digitales.
+            </span>
+
+          </h1>
+
+          <p class="text-[#B8CBCE] text-lg md:text-xl leading-relaxed mb-10">
+            Diseño y desarrollo páginas web modernas,
+            funcionales y adaptadas a cualquier dispositivo.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+
+            <a href="#proyectos"
+              class="inline-flex items-center justify-center bg-[#40E0D0] text-[#061013] font-semibold px-8 py-3 rounded-full hover:bg-[#2CBDB1] transition-colors">
+              Ver proyectos ↗
+            </a>
+
+            <a href="#sobre-mi"
+              class="inline-flex items-center justify-center border border-[#40E0D0] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#40E0D0] hover:text-[#061013] transition-colors">
+              Sobre mí
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================
+             SOBRE MÍ
+        ================================== -->
+
+    <section id="sobre-mi" class="bg-[#061013] border-b border-[#26373B] py-20">
+
+      <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+          <!-- Presentación -->
+          <div>
+
+            <div class="flex items-center gap-4 mb-6">
+
+              <span class="w-10 h-[2px] bg-[#40E0D0]"></span>
+
+              <h2 class="text-3xl md:text-4xl font-bold text-white">
+                Sobre mí
+              </h2>
+
+            </div>
+
+            <p class="text-[#B8CBCE] text-base md:text-lg leading-relaxed mb-6">
+
+              Soy Héctor Encarnación, desarrollador web en formación.
+              Me apasiona crear experiencias digitales que combinen
+              diseño, funcionalidad y un enfoque en el usuario.
+
+            </p>
+
+            <p class="text-[#B8CBCE] text-base md:text-lg leading-relaxed mb-8">
+
+              He trabajado en proyectos de turismo y marketing digital,
+              fortaleciendo mis habilidades en HTML, CSS,
+              JavaScript y Bootstrap.
+
+            </p>
+
+            <a href="#habilidades"
+              class="inline-flex items-center gap-2 border border-[#40E0D0] text-[#40E0D0] font-semibold px-6 py-3 rounded-full hover:bg-[#40E0D0] hover:text-[#061013] transition-colors">
+              Conoce más sobre mí
+              <span aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+
+          <!-- Características -->
+          <div class="flex flex-col gap-8">
+
+            <!-- Diseño web -->
+            <div class="flex items-start gap-5">
+
+              <div
+                class="shrink-0 w-14 h-14 flex items-center justify-center bg-[#101C20] border border-[#26373B] rounded-xl text-[#40E0D0] text-2xl">
+                ◈
+              </div>
+
+              <div>
+                <h3 class="text-white text-xl font-semibold mb-1">
+                  Diseño web
+                </h3>
+
+                <p class="text-[#B8CBCE]">
+                  Interfaces modernas, atractivas y fáciles de utilizar.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Desarrollo -->
+            <div class="flex items-start gap-5">
+
+              <div
+                class="shrink-0 w-14 h-14 flex items-center justify-center bg-[#101C20] border border-[#26373B] rounded-xl text-[#40E0D0] text-2xl">
+                &lt;/&gt;
+              </div>
+
+              <div>
+                <h3 class="text-white text-xl font-semibold mb-1">
+                  Desarrollo
+                </h3>
+
+                <p class="text-[#B8CBCE]">
+                  Soluciones funcionales utilizando tecnologías web.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Aprendizaje continuo -->
+            <div class="flex items-start gap-5">
+
+              <div
+                class="shrink-0 w-14 h-14 flex items-center justify-center bg-[#101C20] border border-[#26373B] rounded-xl text-[#40E0D0] text-2xl">
+                ✦
+              </div>
+
+              <div>
+                <h3 class="text-white text-xl font-semibold mb-1">
+                  Aprendizaje continuo
+                </h3>
+
+                <p class="text-[#B8CBCE]">
+                  Siempre aprendiendo y mejorando mis habilidades.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================
+             HABILIDADES
+        ================================== -->
+
+    <section id="habilidades" class="bg-[#061013] border-b border-[#26373B] py-20">
+
+      <div class="max-w-7xl mx-auto px-6">
+
+        <div class="flex items-start gap-4 mb-10">
+
+          <span class="w-10 h-[2px] bg-[#40E0D0] mt-5 shrink-0"></span>
+
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">
+              Habilidades
+            </h2>
+
+            <p class="text-[#B8CBCE] max-w-xl">
+              Tecnologías y herramientas que estoy aprendiendo
+              y utilizando en mis proyectos de desarrollo web.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Grid de habilidades -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+
+          <!-- HTML5 -->
+          <article
+            class="bg-[#101C20] border border-[#26373B] rounded-xl p-5 hover:border-[#40E0D0] hover:-translate-y-1 transition-all">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+              alt="Logo de HTML5" class="w-10 h-10 mb-5">
+
+            <h3 class="text-white font-semibold mb-1">HTML5</h3>
+
+            <p class="text-[#B8CBCE] text-sm">
+              Estructura web
+            </p>
+
+          </article>
+
+          <!-- CSS3 -->
+          <article
+            class="bg-[#101C20] border border-[#26373B] rounded-xl p-5 hover:border-[#40E0D0] hover:-translate-y-1 transition-all">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+              alt="Logo de CSS3" class="w-10 h-10 mb-5">
+
+            <h3 class="text-white font-semibold mb-1">CSS3</h3>
+
+            <p class="text-[#B8CBCE] text-sm">
+              Diseño y estilos
+            </p>
+
+          </article>
+
+          <!-- JavaScript -->
+          <article
+            class="bg-[#101C20] border border-[#26373B] rounded-xl p-5 hover:border-[#40E0D0] hover:-translate-y-1 transition-all">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              alt="Logo de JavaScript" class="w-10 h-10 mb-5">
+
+            <h3 class="text-white font-semibold mb-1">JavaScript</h3>
+
+            <p class="text-[#B8CBCE] text-sm">
+              Interactividad
+            </p>
+
+          </article>
+
+          <!-- Bootstrap -->
+          <article
+            class="bg-[#101C20] border border-[#26373B] rounded-xl p-5 hover:border-[#40E0D0] hover:-translate-y-1 transition-all">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+              alt="Logo de Bootstrap" class="w-10 h-10 mb-5">
+
+            <h3 class="text-white font-semibold mb-1">Bootstrap</h3>
+
+            <p class="text-[#B8CBCE] text-sm">
+              Componentes UI
+            </p>
+
+          </article>
+
+          <!-- Git -->
+          <article
+            class="bg-[#101C20] border border-[#26373B] rounded-xl p-5 hover:border-[#40E0D0] hover:-translate-y-1 transition-all">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Logo de Git"
+              class="w-10 h-10 mb-5">
+
+            <h3 class="text-white font-semibold mb-1">
+              Git y GitHub
+            </h3>
+
+            <p class="text-[#B8CBCE] text-sm">
+              Control de versiones
+            </p>
+
+          </article>
+
+          <!-- Responsive -->
+          <article
+            class="bg-[#101C20] border border-[#26373B] rounded-xl p-5 hover:border-[#40E0D0] hover:-translate-y-1 transition-all">
+
+            <div class="w-10 h-10 mb-5 flex items-center justify-center bg-[#40E0D0]/10 rounded-lg">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="#40E0D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8" />
+                <path d="M12 17v4" />
+              </svg>
+
+            </div>
+
+            <h3 class="text-white font-semibold mb-1">
+              Diseño Responsive
+            </h3>
+
+            <p class="text-[#B8CBCE] text-sm">
+              Adaptable a todos los dispositivos
+            </p>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================
+             PROYECTOS
+        ================================== -->
+
+    <section id="proyectos" class="bg-[#061013] border-b border-[#26373B] py-20">
+
+      <div class="max-w-7xl mx-auto px-6">
+
+        <div class="flex items-start gap-4 mb-10">
+
+          <span class="w-10 h-[2px] bg-[#40E0D0] mt-5 shrink-0"></span>
+
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">
+              Mis Proyectos
+            </h2>
+
+            <p class="text-[#B8CBCE]">
+              Algunos proyectos y prácticas de desarrollo web.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CSS Grid definido en styles.css -->
+        <div class="proyectos-grid">
+
+          <!-- Proyecto 1 -->
+          <article
+            class="bg-[#101C20] border border-[#26373B] rounded-xl overflow-hidden hover:border-[#40E0D0] transition-colors">
+
+            <img src="img/proyecto1.jpg" alt="Página web del proyecto Turismo RD" class="w-full h-52 object-cover">
+
+            <div class="p-6">
+
+              <h3 class="text-xl font-semibold text-white mb-2">
+                Turismo RD
+              </h3>
+
+              <p class="text-[#B8CBCE] text-sm mb-4">
+                Página turística desarrollada con HTML,
+                CSS y Bootstrap.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-5">
+
+                <span class="bg-[#26373B] text-[#B8CBCE] text-xs px-3 py-1 rounded-full">
+                  HTML
+                </span>
+
+                <span class="bg-[#26373B] text-[#B8CBCE] text-xs px-3 py-1 rounded-full">
+                  CSS
+                </span>
+
+                <span class="bg-[#26373B] text-[#B8CBCE] text-xs px-3 py-1 rounded-full">
+                  Bootstrap
+                </span>
+
+              </div>
+
+              <div id="detalle-proyecto-1" class="hidden mb-5">
+
+                <p class="text-[#B8CBCE] text-sm">
+                  Proyecto académico enfocado en una página
+                  de turismo con navegación, tarjetas de
+                  destinos y diseño responsive.
+                </p>
+
+              </div>
+
+              <button type="button"
+                class="btn-ver-mas border border-[#40E0D0] text-[#40E0D0] px-5 py-2 rounded-full text-sm font-medium hover:bg-[#40E0D0] hover:text-[#061013] transition-colors"
+                data-proyecto="detalle-proyecto-1" aria-controls="detalle-proyecto-1" aria-expanded="false">
+                Ver más ↗
+              </button>
+
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article
+            class="bg-[#101C20] border border-[#26373B] rounded-xl overflow-hidden hover:border-[#40E0D0] transition-colors">
+
+            <img src="img/proyecto2.jpg" alt="Diseño de landing page turística" class="w-full h-52 object-cover">
+
+            <div class="p-6">
+
+              <h3 class="text-xl font-semibold text-white mb-2">
+                Landing Page de Viajes
+              </h3>
+
+              <p class="text-[#B8CBCE] text-sm mb-4">
+                Proyecto de práctica para diseñar
+                una página de aterrizaje.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-5">
+
+                <span class="bg-[#26373B] text-[#B8CBCE] text-xs px-3 py-1 rounded-full">
+                  HTML
+                </span>
+
+                <span class="bg-[#26373B] text-[#B8CBCE] text-xs px-3 py-1 rounded-full">
+                  CSS
+                </span>
+
+                <span class="bg-[#26373B] text-[#B8CBCE] text-xs px-3 py-1 rounded-full">
+                  JavaScript
+                </span>
+
+              </div>
+
+              <div id="detalle-proyecto-2" class="hidden mb-5">
+
+                <p class="text-[#B8CBCE] text-sm">
+                  Ejercicio de diseño de interfaces
+                  orientado a presentar destinos turísticos
+                  y llamadas a la acción.
+                </p>
+
+              </div>
+
+              <button type="button"
+                class="btn-ver-mas border border-[#40E0D0] text-[#40E0D0] px-5 py-2 rounded-full text-sm font-medium hover:bg-[#40E0D0] hover:text-[#061013] transition-colors"
+                data-proyecto="detalle-proyecto-2" aria-controls="detalle-proyecto-2" aria-expanded="false">
+                Ver más ↗
+              </button>
+
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article
+            class="bg-[#101C20] border border-[#26373B] rounded-xl overflow-hidden hover:border-[#40E0D0] transition-colors">
+
+            <img src="img/proyecto3.jpg" alt="Portafolio personal de desarrollo web" class="w-full h-52 object-cover">
+
+            <div class="p-6">
+
+              <h3 class="text-xl font-semibold text-white mb-2">
+                Portafolio Personal
+              </h3>
+
+              <p class="text-[#B8CBCE] text-sm mb-4">
+                Página personal desarrollada con HTML,
+                CSS y JavaScript.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-5">
+
+                <span class="bg-[#26373B] text-[#B8CBCE] text-xs px-3 py-1 rounded-full">
+                  HTML
+                </span>
+
+                <span class="bg-[#26373B] text-[#B8CBCE] text-xs px-3 py-1 rounded-full">
+                  CSS
+                </span>
+
+                <span class="bg-[#26373B] text-[#B8CBCE] text-xs px-3 py-1 rounded-full">
+                  JavaScript
+                </span>
+
+              </div>
+
+              <div id="detalle-proyecto-3" class="hidden mb-5">
+
+                <p class="text-[#B8CBCE] text-sm">
+                  Portafolio académico desarrollado
+                  para practicar HTML5, CSS, diseño
+                  adaptable y JavaScript.
+                </p>
+
+              </div>
+
+              <button type="button"
+                class="btn-ver-mas border border-[#40E0D0] text-[#40E0D0] px-5 py-2 rounded-full text-sm font-medium hover:bg-[#40E0D0] hover:text-[#061013] transition-colors"
+                data-proyecto="detalle-proyecto-3" aria-controls="detalle-proyecto-3" aria-expanded="false">
+                Ver más ↗
+              </button>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================
+             CONTACTO
+        ================================== -->
+
+    <section id="contacto" class="bg-[#061013] py-20">
+
+      <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Encabezado -->
+        <div class="flex items-start gap-4 mb-10">
+
+          <span class="w-10 h-[2px] bg-[#40E0D0] mt-5 shrink-0"></span>
+
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">
+              Contacto
+            </h2>
+
+            <p class="text-[#B8CBCE]">
+              ¿Tienes un proyecto en mente o quieres saludar?
+              Escríbeme.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+          <!-- Formulario -->
+          <div class="lg:col-span-2">
+
+            <form action="https://formspree.io/f/mbggoekw" method="POST" class="flex flex-col gap-5">
+
+              <!-- Nombre -->
+              <div>
+                <label for="nombre" class="block text-white font-medium mb-2">
+                  Nombre
+                </label>
+
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required
+                  class="w-full bg-[#101C20] text-white border border-[#26373B] rounded-lg px-4 py-3 focus:outline-none focus:border-[#40E0D0]"
+                  placeholder="Tu nombre">
+              </div>
+
+              <!-- Correo -->
+              <div>
+                <label for="email" class="block text-white font-medium mb-2">
+                  Correo electrónico
+                </label>
+
+                <input type="email" id="email" name="email" autocomplete="email" required
+                  class="w-full bg-[#101C20] text-white border border-[#26373B] rounded-lg px-4 py-3 focus:outline-none focus:border-[#40E0D0]"
+                  placeholder="correo@ejemplo.com">
+              </div>
+
+              <!-- Mensaje -->
+              <div>
+                <label for="mensaje" class="block text-white font-medium mb-2">
+                  Mensaje
+                </label>
+
+                <textarea id="mensaje" name="mensaje" rows="5" required
+                  class="w-full bg-[#101C20] text-white border border-[#26373B] rounded-lg px-4 py-3 focus:outline-none focus:border-[#40E0D0]"
+                  placeholder="Escribe tu mensaje..."></textarea>
+              </div>
+
+              <!-- Botón -->
+              <div>
+                <button type="submit"
+                  class="bg-[#40E0D0] text-[#061013] font-semibold px-8 py-3 rounded-full hover:bg-[#2CBDB1] transition-colors">
+                  Enviar mensaje ↗
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+
+          <!-- Información adicional -->
+          <aside class="bg-[#101C20] border border-[#26373B] rounded-xl p-8">
+
+            <h3 class="text-xl font-semibold text-white mb-6">
+              Otras formas de contacto
+            </h3>
+
+            <div class="flex flex-col gap-6">
+
+              <div>
+                <h4 class="text-[#40E0D0] font-semibold mb-1">
+                  Ubicación
+                </h4>
+
+                <p class="text-[#B8CBCE]">
+                  República Dominicana
+                </p>
+              </div>
+
+              <div>
+                <h4 class="text-[#40E0D0] font-semibold mb-1">
+                  GitHub
+                </h4>
+
+                <p class="text-[#B8CBCE] text-sm">
+                  Mis proyectos de desarrollo web
+                </p>
+              </div>
+
+              <div>
+                <h4 class="text-[#40E0D0] font-semibold mb-1">
+                  Disponibilidad
+                </h4>
+
+                <p class="text-[#B8CBCE] text-sm">
+                  Abierto a oportunidades de aprendizaje,
+                  colaboración y desarrollo digital.
+                </p>
+              </div>
+
+            </div>
+
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+  <footer class="bg-[#061013] text-[#B8CBCE] border-t border-[#26373B] py-8">
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+      <a href="#inicio" class="text-white font-bold text-lg">
+        HE. <span class="text-[#40E0D0]">/ PORTAFOLIO</span>
+      </a>
+
+      <p class="text-sm text-center">
+        &copy; 2026 Héctor Encarnación.
+        Todos los derechos reservados.
+      </p>
+
+      <a href="#inicio" class="text-[#40E0D0] text-sm hover:underline">
+        Volver arriba ↑
+      </a>
+
+    </div>
+
+  </footer>
+<!-- JavaScript personalizado -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+/* ==========================================
+   PORTAFOLIO PERSONAL - HÉCTOR ENCARNACIÓN
+   Archivo: css/styles.css
+========================================== */
+
+/* 1. GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+/* 2. VARIABLES DE COLORES */
+:root {
+  --color-fondo: #061013;
+  --color-card: #101c20;
+  --color-acento: #40e0d0;
+  --color-texto: #b8cbce;
+  --color-blanco: #ffffff;
+  --color-borde: #26373b;
+
+  --fuente-texto: "Poppins", sans-serif;
+  --fuente-titulos: "Space Grotesk", sans-serif;
+}
+
+/* 3. ESTILOS GENERALES */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-texto);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+}
+
+/* 4. NAVEGACIÓN */
+nav a {
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-acento);
+}
+
+/* 5. TARJETAS DE PROYECTOS */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.proyectos-grid article {
+  min-width: 0;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.proyectos-grid article:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-acento);
+}
+
+.proyectos-grid article img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+/* 6. BOTONES VER MÁS */
+.btn-ver-mas {
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+}
+
+/* 7. ACCESIBILIDAD */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-acento);
+  outline-offset: 3px;
+}
+
+/* ==========================================
+   8. RESPONSIVE - TABLET
+========================================== */
+@media screen and (max-width: 992px) {
+  .proyectos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================
+   9. RESPONSIVE - MÓVIL
+========================================== */
+@media screen and (max-width: 576px) {
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proyectos-grid article img {
+    height: 200px;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+}
+
+/* ==========================================
+   MODO CLARO
+========================================== */
+
+body.modo-claro {
+  background-color: #f5f8f9;
+  color: #334155;
+}
+
+/* Fondos principales */
+body.modo-claro header,
+body.modo-claro section,
+body.modo-claro footer {
+  background-color: #f5f8f9;
+}
+
+/* Tarjetas y contenedores */
+body.modo-claro article,
+body.modo-claro aside {
+  background-color: #ffffff;
+  border-color: #d7e3e5;
+}
+
+/* Títulos */
+body.modo-claro h1,
+body.modo-claro h2,
+body.modo-claro h3,
+body.modo-claro h4 {
+  color: #0f2530;
+}
+
+/* Párrafos */
+body.modo-claro p {
+  color: #475569;
+}
+
+/* Enlaces del navbar */
+body.modo-claro nav a {
+  color: #0f2530;
+}
+
+body.modo-claro nav a:hover {
+  color: #008f89;
+}
+
+/* Botones de proyectos */
+body.modo-claro .btn-ver-mas {
+  color: #007d78;
+  border-color: #008f89;
+}
+
+body.modo-claro .btn-ver-mas:hover {
+  background-color: #40e0d0;
+  color: #061013;
+}
+
+/* Etiquetas del formulario en modo claro */
+body.modo-claro label {
+  color: #0f2530;
+}
+
+/* Campos del formulario */
+body.modo-claro input,
+body.modo-claro textarea {
+  background-color: #ffffff;
+  color: #0f2530;
+  border-color: #d7e3e5;
+}
+
+/* Hero: conservar contraste */
+body.modo-claro #inicio {
+  background-color: #061013;
+}
+
+body.modo-claro #inicio h1,
+body.modo-claro #inicio p {
+  color: #ffffff;
+}
+
+body.modo-claro #inicio h1 span {
+  color: #40e0d0;
+}
+
+/* Botón del tema */
+body.modo-claro #cambiar-tema {
+  color: #0f2530;
+  border-color: #d7e3e5;
+}
+
+/* Footer en modo claro */
+body.modo-claro footer {
+  background-color: #f5f8f9;
+  border-top: 1px solid #d7e3e5;
+}
+
+/* Logo y enlaces */
+body.modo-claro footer a {
+  color: #0f2530;
+}
+
+/* Mantener turquesa en el logo */
+body.modo-claro footer a span {
+  color: #008f89;
+}
+
+/* Texto de derechos reservados */
+body.modo-claro footer p {
+  color: #475569;
+}
+
+/* Hover de enlaces */
+body.modo-claro footer a:hover {
+  color: #008f89;
+}
+
+/* ==========================================
+   HERO RESPONSIVE - MÓVIL
+========================================== */
+
+@media screen and (max-width: 576px) {
+  /* Hero */
+  #inicio {
+    min-height: 850px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+
+  /* Imagen de fondo */
+  #inicio > img {
+    object-fit: cover;
+    object-position: 65% center;
+    opacity: 0.35;
+  }
+
+  /* Degradado adicional */
+  #inicio > div[aria-hidden="true"] {
+    background: linear-gradient(
+      to bottom,
+      rgba(6, 16, 19, 0.92) 0%,
+      rgba(6, 16, 19, 0.8) 50%,
+      rgba(6, 16, 19, 0.35) 100%
+    );
+  }
+
+  /* Contenido */
+  #inicio > div.relative {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  /* Título */
+  #inicio h1 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    max-width: 100%;
+  }
+
+  /* Descripción */
+  #inicio p {
+    max-width: 100%;
+  }
+
+  /* Botones */
+  #inicio a {
+    text-align: center;
+  }
+}
